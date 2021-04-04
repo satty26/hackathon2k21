@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>E CELL IIITP | Hackathon 2k21</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"/> -->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Open+Sans+Condensed:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <!-- CSShake -->
+<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+  <!-- FONTAWESOME -->
+  <!-- <link href="https://www.foo.com/public_html/wp-content/themes/independent-publisher/fonts/fontawesome-free-5-0-6/web-fonts-with-css/fontawesome-all.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
+
+  <!-- animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="prefetch" href="hero3.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body class="preloaded">
+    <section class="preload">
+    <!-- Preloader -->
+    <div class="hacking-animation">
+      <pre class="hacking-animation__text">
+      </pre>
+    </div>
+  </section>
+    <section class="afterloaded">
+
+
+    <section id="title" >
+  <div class="container-fluid">
+    <nav>
+      <div class="ecell-logo">
+        <img src="css/Frame.png" alt="" class="eclogo">
+      </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#title" class="navl"><h2>Home</h2></a>
+        <a href="#about" class="navl"><h2>Why Participate?</h2></a>
+        <a href="#" class="navl"><h2>Theme</h2></a>
+        <a href="#" class="navl"><h2>Timeline</h2></a>
+        <a href="#" class="navl"><h2>Prizes</h2></a>
+        <a href="#" class="navl"><h2>Sponsors</h2></a>
+        <a href="#" class="navl"><h2>Contact us</h2></a>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" id = "opnbutton" onclick="openNav()">☰</button>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.getElementById("opnbutton").style.display = "none";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+          document.getElementById("opnbutton").style.display = "inline";
+        }
+
+      </script>
+
+    </nav>
+  </div>
+<div class="smlogos">
+  <ul class="socialmedia" data-aos="fade-up" data-aos-delay="1200"
+    data-aos-duration="1000">
+    <li><a href="https://www.google.com/"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://www.google.com/"><i class="fas fa-envelope"></i></a></li>
+    <li><a href="https://www.google.com/"><i class="fab fa-instagram"></i></a></li>
+    <p>|</p>
+  </ul>
+</div>
+
+<div class="head-container">
+
+  <div class="heading shake-chunk" data-aos="fade-up"
+    data-aos-duration="1000">
+    <h1>HACKATHON</h1>
+    <h1 class="cursor">2k21</h1>
+  </div>
+  <div class="sub-container" data-aos="fade-up" data-aos-delay="500"
+    data-aos-duration="1000">
+    <button type="button" class="btn btn-primary applybtn">REGISTER NOW</button>
+  </div>
+  <div class="countdown" data-aos="fade-up" data-aos-delay="1000"
+    data-aos-duration="1000">
+    <h2>REGISTRATION STARTS IN</h2>
+    <div id="timer"></div>
+  </div>
+
+  <script src="three.r119.min.js"></script>
+  <script src="vanta.net.min.js"></script>
+  <script>
+  VANTA.NET({
+    el: "#title",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: screen.height,
+    minWidth: screen.width-10.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x3fff3f,
+    backgroundColor: 0x60706,
+    points: 8.00,
+    maxDistance: 25.00,
+    spacing: 19.00
+  })
+  </script>
+
+  <!-- <div class="sub-heading">
+    <h3 class="subtitle">Innovating Today, Transforming Tomorrow</h3>
+  </div> -->
+  <!-- <div class="title-content" data-aos="fade-up" data-aos-duration="3000">
+    <p class="event-details">E-Cell IIIT Pune is pleased to present to you its first ever flagship event - IDEATHON. This is your opportunity to cherish your rational thinking and win exciting prizes at the same time.</p>
+  </div> -->
+  <!-- <div class="ctabutton" data-aos="fade-up" data-aos-duration="3000">
+    <div
+	class="apply-button btn btn1"
+	data-hackathon-slug="ideathon-2k21"
+	data-button-theme="dark-inverted"
+	style="height: 44px; width: 312px"
+></div>
+  </div> -->
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="neon-box shake-slow">
+  </div>
+  <div class="about-hack" data-aos="fade-up" data-aos-delay="200"
+    data-aos-duration="1000">
+    <h2>ABOUT HACKTHON 2k21</h2>
+    <p>A great idea requires a healthy environment to be turned into a reality. E-Cell at IIIT Pune comes forth with its flagship event - HACKATHON - a design sprint-like event in which computer programmers or anyone involved in software development collaborate and work on problems that itch their brains. We are glad to offer you an opportunity to connect with like-minded people and combine your enthusiasm levels to come up with authentic software solutions.</p>
+    <div class="row abh" data-aos="fade-up" data-aos-delay="200"
+      data-aos-duration="1000">
+    <div class="col">
+      <a href="#"><i class="fas fa-calendar-alt hackic"></i></a>
+    </div>
+    <div class="col icns-text">
+      <h3>EVENT STARTS ON</h3>
+      <h4>April 17, 2021</h4>
+    </div>
+    <div class="col">
+      <a href="#"><i class="fas fa-award hackic"></i></a>
+    </div>
+    <div class="col icns-text">
+      <h3>WIN PRIZES WORTH</h3>
+      <h4>INR 1,00,000</h4>
+    </div>
+  </div>
+<!-- <div class="icns">
+        <a href="#"><i class="fas fa-calendar-alt hackic"></i></a>
+    </div>
+    <div class="icns-text">
+      <h2>EVENT STARTS ON</h2>
+      <h4>April 17, 2021</h4>
+    </div>
+
+    <div class="icns">
+      <a href="#"><i class="fas fa-award hackic"></i></a>
+    </div>
+    <div class="icns-text">
+      <h2>WIN PRIZES WORTH</h2>
+      <h4>INR 1,00,000</h4>
+    </div> -->
+
+  </div>
+</section>
+<section id="themes">
+  <div class="sec-head">
+    <h2>THEMES</h2>
+  </div>
+  <div class="content">
+    <a class="card" href="#!">
+      <div class="front card1" data-aos="fade-left"
+        data-aos-duration="1000">
+        <p>ANDROID APP DEVELOPMENT</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front card2" data-aos="fade-left" data-aos-delay="200"
+        data-aos-duration="1000">
+        <p>FULL STACK WEB DEVELOPMENT</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+        </div>
+      </div></a><a class="card" href="#!">
+      <div class="front card3" data-aos="fade-left" data-aos-delay="500"
+        data-aos-duration="1000">
+        <p>FRONT END WEB DEVELOPMENT</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+        </div>
+      </div></a>
+  </div>
+<!-- <script src="three.r119.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+<script>
+VANTA.FOG({
+  el: "#themes",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: screen.height,
+  minWidth: screen.width-20.00,
+  highlightColor: 0xbbb00,
+  midtoneColor: 0xb110b,
+  lowlightColor: 0x142a14,
+  baseColor: 0x0
+})
+</script> -->
+</section>
+
+
+<section id="timeline" class="intro">
+<div class="container1 sec-head">
+  <h2 >TIMELINE</h2>
+  <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+  </div>
+</div>
+<script src="three.r119.min.js"></script>
+<script src="vanta.dots.min.js"></script>
+<script>
+VANTA.DOTS({
+  el: "#timeline",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: screen.height*1.75,
+  minWidth: screen.width-10.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x2eb323,
+  color2: 0x3c723c,
+  backgroundColor: 0x141614
+})
+</script>
+
+<section class="timeline">
+<ul>
+  <li>
+    <div>
+      <time><i class="fas fa-flag ticon"></i></time>
+      <time>Registration Begins</time> <time>10-04-2021</time>Register on Devfolio directly or via our website
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-hourglass-end ticon"></i></time>
+      <time>Registration Ends</time><time>18-04-2021</time>Complete registration by this date if you want to participate in hackathon
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-brain ticon"></i></time>
+      <time>Submission Begins</time> <time>18-04-2021 - 20-04-2021</time>Prepare the code of your website/application based on given problem statement
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-file-alt ticon"></i></time>
+      <time>Last Date of Submission</time><time>20-04-2021</time>Submit your code before the portal is closed
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-bullhorn ticon"></i></time>
+      <time>Round 1 Results</time> <time>22-04-2021</time>Certain teams will be qualified for the final face-off in the second round.
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-chalkboard-teacher ticon"></i></time>
+      <time>Round 2: The 36-hour Hackathon </time><time>24-04-2021 - 25-04-2021</time>Make sure you use the 36 hours given in the best possible way and complete your tasks
+    </div>
+  </li>
+  <li>
+    <div>
+      <time><i class="fas fa-trophy ticon"></i></time>
+      <time>Final Results</time> <time>25-04-2021</time>Winners will be declared marking the end of our Hackathon journey
+    </div>
+  </li>
+</ul>
+</section>
+
+</section>
+
+
+</section>
+</body>
+</html>
+
+
+<!-- JS AND jquery -->
+<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="index.js" charset="utf-8"></script>
+
+  </body>
+</html>
