@@ -951,6 +951,9 @@ footer svg {
   }
 }
 @media screen and (max-width: 480px){
+	html{
+		overflow-x: hidden;
+	}
 	.eclogo{
 		padding-top: 20px;
 		max-height: 100px;
