@@ -69,7 +69,7 @@ $(document).ready(function() {
         })();
 
 
-    }, 4500);
+    }, 0);
 });
 function updateTimer() {
 future = Date.parse("apr 11, 2021 00:00:00");

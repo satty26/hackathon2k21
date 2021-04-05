@@ -39,6 +39,10 @@ html {
 	display: inline;
 }
 
+.heading{
+	width: 80%;
+	margin: auto;
+}
 .heading h1{
 	text-shadow: 0 0 20px #86c232;
 	letter-spacing: 10px;
@@ -163,7 +167,7 @@ p.cursor::after {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   right: 0;
   background-color: #597039;
@@ -195,7 +199,8 @@ p.cursor::after {
 	padding-top: 100px;
 }
 .navl h2{
-	font-size: 20px;
+	font-size: 22px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .navl h2:after {
     display: block;
@@ -203,7 +208,7 @@ p.cursor::after {
     background-color: #86c232;
     content: " ";
     width: 70px;
-    margin-top: 30px;
+    margin-top: 28px;
 }
 .sidebar .closebtn {
 	/* background-color: white; */
@@ -642,4 +647,355 @@ time {
 	border-width: 8px 16px 8px 0;
 	border-color: transparent #86c232 transparent transparent;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer-contact{
+	position: absolute;
+	z-index: 4;
+	background-color: #141614;
+}
+#footer-contact a {
+  color:#fff;
+  text-decoration:none;
+}
+footer {
+	padding-top: 400px;
+	z-index: 3;
+  width:99.4vw;
+  position:relative;
+  bottom:0px;
+  background-color: #141614;
+}
+footer div {
+
+  margin: 5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+footer svg {
+  width:100%;
+  overflow:visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #86c232;
+}
+.drop {
+  fill: #86c232;
+  animation: drop 3.2s linear infinite normal;
+  stroke: #86c232;
+  stroke-width:0.5;
+  transform: translateY(25px) ;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(.1);
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
+
+
+/*Big break*/
+/*Road not taken*/
+
+
+
+
+/* Responsive footer */
+
+.footer-distributed{
+	background-color:#141614;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+
+.footer-distributed h3 span{
+	color:  #86c232;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+  padding-right: 10px;
+}
+
+.footer-distributed .footer-links a:hover{
+	border-bottom: 2px solid #86c232;
+}
+.footer-distributed .footer-company-name{
+  font-family: 'Montserrat', sans-serif;
+	color:  #86c232;
+	font-size: 17px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #86c232;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	color: #e8eef2;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:17px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #86c232;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  font-family: 'Montserrat', sans-serif;
+	line-height: 20px;
+	color:  #e8eef2;
+	font-size: 17px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #e8eef2;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 25px;
+	color: #86c232;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 767px){
+  .footer-distributed{
+    font: bold 18px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px){
+	.eclogo{
+		padding-top: 20px;
+		max-height: 100px;
+		max-width: auto;
+	}
+	.heading{
+		padding-top: 50px;
+	}
+	.heading h1{
+		font-size: 60px;
+		letter-spacing: 5px;
+	}
+	.sub-container{
+		width: 80%;
+		margin-left: 29%;
+	}
+	.countdown h2{
+		padding-top: 30px;
+		font-size: 30px;
+	}
+	#timer div span{
+		font-size: 0.25rem;
+	}
+	.smlogos{
+		left: 0px;
+		bottom: 30px;
+		font-size: 12px;
+	}
+	.about-hack h2{
+		font-size: 25px;
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+	.about-hack p{
+		padding-top: 0;
+		font-size: 14px;
+	}
+}
+
+
+
+
+
+
+.contact-list{
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
