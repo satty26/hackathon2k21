@@ -614,11 +614,11 @@ time {
 }
 
 .timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+  transform: translate3d(50px, 0, 0);
 }
 
 .timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+  transform: translate3d(-50px, 0, 0);
 }
 
 .timeline ul li.in-view div {
@@ -631,13 +631,13 @@ time {
 		position: absolute;
 		top: 5%;
 		right:10%;
-		transform: translate(-50%,-50%);
+		transform: translate(-30%,-30%);
 }
 .timeline ul li {
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .timeline ul li div {
-	width: calc(100vw - 91px);
+	width: calc(100vw - 130px);
 }
 .timeline ul li:nth-child(even) div {
 	left: 45px;
@@ -951,9 +951,7 @@ footer svg {
   }
 }
 @media screen and (max-width: 480px){
-	html{
-		overflow-x: hidden;
-	}
+
 	.eclogo{
 		padding-top: 20px;
 		max-height: 100px;
@@ -963,7 +961,7 @@ footer svg {
 		padding-top: 50px;
 	}
 	.heading h1{
-		font-size: 60px;
+		font-size: 50px;
 		letter-spacing: 5px;
 	}
 	.sub-container{
@@ -971,25 +969,68 @@ footer svg {
 		margin-left: 29%;
 	}
 	.countdown h2{
-		padding-top: 30px;
+		padding-top: 10px;
 		font-size: 30px;
+		padding-bottom: 0;
+	}
+	#timer{
+		font-size: 2rem;
 	}
 	#timer div span{
-		font-size: 0.25rem;
+		font-size: 0.35rem;
 	}
 	.smlogos{
-		left: 0px;
-		bottom: 30px;
+		left: 5px;
+		bottom: 25px;
 		font-size: 12px;
+	}
+	.socialmedia p{
+		visibility: hidden;
+	}
+	.socialmedia li{
+		display: inline;
+		padding-right: 20px;
+	}
+	.about-hack{
+		top: 15%;
 	}
 	.about-hack h2{
 		font-size: 25px;
-		padding-top: 60px;
+		padding-top: 0px;
 		padding-bottom: 20px;
 	}
 	.about-hack p{
 		padding-top: 0;
 		font-size: 14px;
+		width: 90%;
+	}
+	footer{
+		padding-top: 1100px;
+	}
+	.hackic{
+		margin-left: 40%;
+		font-size: 40px;
+	}
+	.icns-text h3{
+		font-size: 16px;
+	}
+	.icns-text h4{
+		font-size: 12px;
+	}
+	.about-hack p{
+		padding-bottom: 10px;
+	}
+	.icns-text{
+		text-align: center;
+	}
+	.neon-box{
+		height: 90vh;
+	}
+	#about{
+		padding-top: 80px;
+	}
+	.icns-text{
+		padding-bottom: 30px;
 	}
 }
 

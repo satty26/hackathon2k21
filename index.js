@@ -34,6 +34,21 @@ $(document).ready(function() {
 	setTimeout(function(){
         $('body').addClass('loaded');
         AOS.init();
+				if(screen.height<1000){
+					VANTA.DOTS({
+					  el: "#timeline",
+					  mouseControls: true,
+					  touchControls: true,
+					  gyroControls: false,
+					  minHeight: screen.height*2.00,
+					  minWidth: screen.width-10.00,
+					  scale: 1.00,
+					  scaleMobile: 1.00,
+					  color: 0x2eb323,
+					  color2: 0x3c723c,
+					  backgroundColor: 0x141614
+					})
+				}
 				(function() {
 
           'use strict';
@@ -69,7 +84,7 @@ $(document).ready(function() {
         })();
 
 
-    }, 4500);
+    }, 0);
 });
 function updateTimer() {
 future = Date.parse("apr 11, 2021 00:00:00");
