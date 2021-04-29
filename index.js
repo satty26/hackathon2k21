@@ -13,6 +13,11 @@ Loading the website.......
 .......`;
 
 $(document).ready(function() {
+
+	window.onload = function(){
+		console.log(document.getElementsByClassName('intro')[0].clientWidth);
+  }
+
 	const textArray = textString.split('');
 	const textElem = $('.hacking-animation__text');
 
@@ -84,10 +89,10 @@ $(document).ready(function() {
         })();
 
 
-    }, 4500);
+    }, 0);
 });
 function updateTimer() {
-future = Date.parse("apr 11, 2021 00:00:00");
+future = Date.parse("may 10, 2021 00:00:00");
 now = new Date();
 diff = future - now;
 
