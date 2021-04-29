@@ -28,7 +28,7 @@ html {
 }
 
 #title{
-  background-color: #e8eef2;
+  background-color: #000;
   width: 100%;
   height: 100vh;
   /* background: url("hero3.png"); */
@@ -690,7 +690,7 @@ footer div {
 }
 footer svg {
   width:100%;
-  overflow:visible;
+  overflow:hidden;
 }
 
 .wave {
@@ -951,6 +951,9 @@ footer svg {
   }
 }
 @media screen and (max-width: 480px){
+	@keyframes wave {
+	  to {transform: translateX(-100%);}
+	}
 
 	.eclogo{
 		padding-top: 20px;
