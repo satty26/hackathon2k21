@@ -14,9 +14,6 @@ Loading the website.......
 
 $(document).ready(function() {
 
-	window.onload = function(){
-		console.log(document.getElementsByClassName('intro')[0].clientWidth);
-  }
 
 	const textArray = textString.split('');
 	const textElem = $('.hacking-animation__text');
@@ -38,22 +35,24 @@ $(document).ready(function() {
 	}, 30);
 	setTimeout(function(){
         $('body').addClass('loaded');
-        AOS.init();
-				if(screen.height<1000){
-					VANTA.DOTS({
-					  el: "#timeline",
-					  mouseControls: true,
-					  touchControls: true,
-					  gyroControls: false,
-					  minHeight: screen.height*2.00,
-					  minWidth: screen.width-10.00,
-					  scale: 1.00,
-					  scaleMobile: 1.00,
-					  color: 0x2eb323,
-					  color2: 0x3c723c,
-					  backgroundColor: 0x141614
-					})
+				if(screen.height>=1000){
+        	AOS.init();
 				}
+				// if(screen.height<1000){
+				// 	VANTA.DOTS({
+				// 	  el: "#timeline",
+				// 	  mouseControls: true,
+				// 	  touchControls: true,
+				// 	  gyroControls: false,
+				// 	  minHeight: screen.height*2.00,
+				// 	  minWidth: screen.width-10.00,
+				// 	  scale: 1.00,
+				// 	  scaleMobile: 1.00,
+				// 	  color: 0x2eb323,
+				// 	  color2: 0x3c723c,
+				// 	  backgroundColor: 0x141614
+				// 	})
+				// }
 				(function() {
 
           'use strict';
@@ -89,7 +88,7 @@ $(document).ready(function() {
         })();
 
 
-    }, 0);
+    }, 3000);
 });
 function updateTimer() {
 future = Date.parse("may 10, 2021 00:00:00");
