@@ -35,24 +35,7 @@ $(document).ready(function() {
 	}, 30);
 	setTimeout(function(){
         $('body').addClass('loaded');
-				if(screen.height>=1000){
         	AOS.init();
-				}
-				// if(screen.height<1000){
-				// 	VANTA.DOTS({
-				// 	  el: "#timeline",
-				// 	  mouseControls: true,
-				// 	  touchControls: true,
-				// 	  gyroControls: false,
-				// 	  minHeight: screen.height*2.00,
-				// 	  minWidth: screen.width-10.00,
-				// 	  scale: 1.00,
-				// 	  scaleMobile: 1.00,
-				// 	  color: 0x2eb323,
-				// 	  color2: 0x3c723c,
-				// 	  backgroundColor: 0x141614
-				// 	})
-				// }
 				(function() {
 
           'use strict';
