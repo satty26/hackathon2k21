@@ -86,7 +86,7 @@ html {
 .sub-container{
 	padding-top: 50px;
 	margin: auto;
-	width: 10%;
+	width: 15%;
 }
 .event-details{
 	padding-top: 50px;
@@ -174,6 +174,19 @@ p.cursor::after {
     }
 
 }
+.nav-item{
+  text-align: center;
+}
+.nav-link{
+  color: white;
+  text-decoration: rgb(134, 194, 50);
+  padding-bottom: 2%;
+  font-family: 'Barlow Semi Condensed', sans-serif;  
+}
+.nav-link:hover{
+  color: white;
+  border-bottom: 2px solid #597039; 
+}
 .sidebar {
   height: 100%;
   width: 0;
@@ -209,6 +222,7 @@ p.cursor::after {
 .sidebar .navlks{
 	padding-top: 100px;
 }
+
 .navl h2{
 	font-size: 22px;
 	font-family: 'Barlow Semi Condensed', sans-serif;
@@ -317,6 +331,10 @@ p.cursor::after {
 	margin-right: 10%;
 	background-color: #86c232;
 	opacity: 50%;
+}
+.abh{
+  margin-left: 5%;
+  width: 80%;
 }
 .about-hack{
 	position:absolute;
@@ -457,7 +475,7 @@ p.cursor::after {
 	 background-image: linear-gradient(rgba(134, 194, 50,.1), rgba(134, 194, 50,0.6)), url('full.png');
 }
 .card3{
-	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('webdev.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('front.jpg');
 }
 .front,
 .back {
@@ -786,6 +804,8 @@ footer svg {
 	color: #fff;
 }
 #sponsors{
+  height: 100vh;
+  background: url('section_sponsors.png');
   padding-top: 5%;
 }
 
@@ -991,8 +1011,12 @@ footer svg {
 	}
 	.sub-container{
 		width: 80%;
-		margin-left: 29%;
+		margin: auto;
+    text-align: center;
 	}
+  .applybtn{
+    font-size: 1rem;
+  }
 	.countdown h2{
 		padding-top: 10px;
 		font-size: 30px;
@@ -1034,6 +1058,12 @@ footer svg {
 		font-size: 1rem;
 
 	}
+  .hkicons{
+    text-align: center;
+  }
+  .hackic{
+    font-size: 3rem;
+  }
 	.icns-text h4{
     text-align: center;
 		font-size: 0.8rem;
