@@ -44,6 +44,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.dots.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
 <body class="preloaded">
   <section class="preload">
     <!-- Preloader -->
@@ -107,27 +110,41 @@
         </nav>
       </div>
       <div class="mobile-nav-bar hidden">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: inherit;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: inherit;">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <div class="ecell-logo">
-                <img src="css/Frame.png" alt="" class="eclogo">
-              </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><div class="ecell-logo">
+            <img src="css/Frame.png" alt="" class="eclogo">
+          </div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarMain">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                <a class="nav-link" href="#">ABOUT HACKATHON</a>
-                <a class="nav-link" href="#">THEMES</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT HACKATHON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">THEME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TIMELINE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRIZES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SPONSORS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
+         </nav>
       </div>
       <div class="smlogos">
         <ul class="socialmedia" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
@@ -154,16 +171,15 @@
           <div id="timer"></div>
         </div>
 
-        <script src="three.r119.min.js"></script>
-        <script src="vanta.net.min.js"></script>
+        
         <script>
           VANTA.NET({
             el: "#title",
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: screen.height,
-            minWidth: document.getElementsByTagName('body')[0].clientWidth - 10,
+            minHeight: 200.0,
+            minWidth: 200.0,
             scale: 1.00,
             scaleMobile: 0.50,
             color: 0x3fff3f,
@@ -308,8 +324,8 @@ VANTA.FOG({
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: screen.height * 2.25,
-          minWidth: document.getElementsByTagName('body')[0].clientWidth - 10,
+          minHeight: 200,
+          minWidth: 200,
           scale: 1.00,
           scaleMobile: 1.00,
           color: 0x2eb323,
@@ -371,7 +387,9 @@ VANTA.FOG({
       </section>
     </section>
 
-
+    <section id="sponsors">
+      <h2>SPONSORS</h2>
+    </section>
     <!-- FOOTER -->
 
     <div id="footer-contact" class="footer-distributed">
@@ -485,12 +503,13 @@ VANTA.FOG({
 
 <!-- JS AND jquery -->
 <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="index.js" charset="utf-8"></script>

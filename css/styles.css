@@ -1,6 +1,7 @@
 html {
 	font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .scrollable-element {
   scrollbar-color: red yellow;
@@ -14,7 +15,7 @@ html {
 	font-size: 20px;
 }
 .preloaded .afterloaded{
-  display: none;
+  visibility: hidden;
 }
 
 .loaded .preload{
@@ -22,24 +23,23 @@ html {
 }
 
 .loaded .afterloaded{
-  display: block;
-	height: 100vh;
-
+  visibility: visible;
+  /* display: block; */
+	min-height: 100vh;
 }
 
 .hidden{
-  visibility: hidden;
+  display: none;
 }
 
 .mobile-nav-bar{
-  position: absolute;
-  top:0;
+  display: block;
   width: 100vw;
 }
 #title{
   background-color: #000;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   /* background: url("hero3.png"); */
 
 }
@@ -342,9 +342,6 @@ p.cursor::after {
 	color: white;
 	padding-bottom: 80px;
 }
-.abh{
-	width: 80%;
-}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -363,15 +360,20 @@ p.cursor::after {
 
 
 
-
+.event-timings{
+  width: 80%;
+  margin-left: 0;
+}
 .hackic{
-	font-size: 100px;
-	margin-left: 70%;
+  font-size: 5rem;
 	color: #222629;
 	/* text-shadow: 0 0 20px #fff; */
 }
-
+.hkicons{
+  text-align: right;
+}
 .icns-text{
+  text-align: left;
 	padding-top: 10px;
 	text-shadow: 0 0 20px #86c232;
 	color: #fff;
@@ -675,8 +677,6 @@ time {
 
 /* footer */
 #footer-contact{
-	position: absolute;
-	z-index: 4;
 	background-color: #141614;
 }
 #footer-contact a {
@@ -684,7 +684,6 @@ time {
   text-decoration:none;
 }
 footer {
-	padding-top: 400px;
 	z-index: 3;
   width:99.4vw;
   position:relative;
@@ -774,8 +773,16 @@ footer svg {
 
 /*Big break*/
 /*Road not taken*/
-
-
+#sponsors h2{
+	font-size: 70px;
+	text-align: center;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-shadow: 0 0 20px #82c632;
+	color: #fff;
+}
+#sponsors{
+  padding-top: 5%;
+}
 
 
 /* Responsive footer */
@@ -1017,24 +1024,17 @@ footer svg {
 		font-size: 14px;
 		width: 90%;
 	}
-	footer{
-		padding-top: 1100px;
-	}
-	.hackic{
-		margin-left: 40%;
-		font-size: 40px;
-	}
 	.icns-text h3{
-		font-size: 16px;
+    text-align: center;
+		font-size: 1rem;
+
 	}
 	.icns-text h4{
-		font-size: 12px;
+    text-align: center;
+		font-size: 0.8rem;
 	}
 	.about-hack p{
 		padding-bottom: 10px;
-	}
-	.icns-text{
-		text-align: center;
 	}
 	.neon-box{
 		height: 90vh;
