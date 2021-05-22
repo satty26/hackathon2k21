@@ -37,6 +37,7 @@ $(document).ready(function () {
     if (screen.width < 1100) {
       $('.desktop-nav-bar').addClass('hidden');
       $('.mobile-nav-bar').removeClass('hidden');
+      $('.mobile-nav-bar').addClass('block');
     }
     AOS.init();
     (function () {

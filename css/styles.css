@@ -31,9 +31,10 @@ html {
 .hidden{
   display: none;
 }
-
-.mobile-nav-bar{
+.block{
   display: block;
+}
+.mobile-nav-bar{
   width: 100vw;
 }
 #title{
@@ -187,11 +188,11 @@ p.cursor::after {
   padding-top: 60px;
 }
 .applybtn{
-	padding: 12px 18px;
+	padding: 1rem 2rem;
 	background-color: #86c232;
 	color: #222629;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 1.4rem;
 }
 .sidebar a {
   text-align: left;
@@ -444,6 +445,10 @@ p.cursor::after {
   .card {
     width: 100%;
   }
+}
+.card-txt{
+  text-align: justify;
+  color: #86c232;
 }
 .card1{
 	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('android1.png');
