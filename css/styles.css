@@ -27,6 +27,15 @@ html {
 
 }
 
+.hidden{
+  visibility: hidden;
+}
+
+.mobile-nav-bar{
+  position: absolute;
+  top:0;
+  width: 100vw;
+}
 #title{
   background-color: #000;
   width: 100%;
@@ -125,14 +134,15 @@ p.cursor::after {
   }
 }
 
+
 .hacking-animation {
     background: #000;
     height: 100%;
 
     &__text {
         bottom: 0;
-        font-family: monospace;
-				font-size: 18px;
+        font-family:monospace;
+				font-size:18px;
         left: 0;
         line-height: 1.5rem;
         padding: 2rem;

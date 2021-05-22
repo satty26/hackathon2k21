@@ -35,6 +35,10 @@ $(document).ready(function() {
 	}, 30);
 	setTimeout(function(){
         $('body').addClass('loaded');
+        if(screen.width<1100){
+          $('.desktop-nav-bar').addClass('hidden');
+          $('.mobile-nav-bar').removeClass('hidden');
+        }
         	AOS.init();
 				(function() {
 
