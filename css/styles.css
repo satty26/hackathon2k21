@@ -80,9 +80,8 @@ html {
 	font-size: 30px;
 	color: #86c232;
 }
-.head-container{
-	padding-top: 3%;
-}
+/* .head-container{
+} */
 .sub-container{
 	padding-top: 2%;
 	width: 100%;
@@ -92,7 +91,7 @@ html {
   text-align: center;
 }
 .event-details{
-	padding-top: 50px;
+	padding-top: 3%;
 	width:20%;
 	margin: 0 auto;
 	text-align: justify;
@@ -460,7 +459,7 @@ p.cursor::after {
 
 .event-brochure{
   width: 100%;
-  margin: auto;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .card {
