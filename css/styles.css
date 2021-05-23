@@ -85,8 +85,11 @@ html {
 }
 .sub-container{
 	padding-top: 2%;
-	margin: auto;
-	width: 15%;
+	width: 100%;
+}
+.register-now{
+  display: block;
+  text-align: center;
 }
 .event-details{
 	padding-top: 50px;
@@ -453,6 +456,11 @@ p.cursor::after {
   perspective: 1000px;
   margin: 3rem;
   position: relative;
+}
+
+.event-brochure{
+  width: 100%;
+  margin: auto;
 }
 @media screen and (max-width: 800px) {
   .card {
