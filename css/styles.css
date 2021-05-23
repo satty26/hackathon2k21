@@ -60,7 +60,7 @@ html {
 	color: #fff;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-weight: 500;
-	font-size: 102px;
+	font-size: 5rem;
 }
 .smlogos{
 	position:absolute;
@@ -81,10 +81,10 @@ html {
 	color: #86c232;
 }
 .head-container{
-	padding-top: 5%;
+	padding-top: 3%;
 }
 .sub-container{
-	padding-top: 50px;
+	padding-top: 2%;
 	margin: auto;
 	width: 15%;
 }
