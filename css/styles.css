@@ -974,9 +974,6 @@ footer svg {
 	margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1200px) {
-
-}
 
 @media screen and (max-width: 992px) {
 
@@ -1048,7 +1045,7 @@ footer svg {
 		padding-right: 20px;
 	}
 	.about-hack{
-		top: 15%;
+		top: 20%;
 	}
 	.about-hack h2{
 		font-size: 25px;
@@ -1088,11 +1085,6 @@ footer svg {
 		padding-bottom: 30px;
 	}
 }
-
-
-
-
-
 
 .contact-list{
 	padding-top: 30px;
