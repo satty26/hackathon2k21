@@ -399,8 +399,14 @@ p.cursor::after {
 	text-shadow: 0 0 20px #86c232;
 	color: #fff;
 }
-
-
+.event-brochure{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.brochure-btn{
+  margin-right: 25%;
+  margin-left: 25%;
+}
 
 /* themes */
 
@@ -535,7 +541,7 @@ p.cursor::after {
 }
 
 .back {
-  background: #fff;
+  background: inherit;
   transform: rotateY(-180deg);
   padding: 0 2em;
 }
@@ -799,7 +805,81 @@ footer svg {
   to {transform: translateX(-100%);}
 }
 
+#faqs{
+  background-color: #141614;
+  
+}
+#faqs h2{
+  position: relative;
+  font-size: 70px;
+	text-align: center;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-shadow: 0 0 20px #82c632;
+	color: #fff;
+}
 
+
+.container-faq {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+
+
+.accordion{
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #82c632;
+  cursor: pointer;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  
+}
+
+.accordion i {
+  color: #82c632;
+  transition: all .5s ease-in;
+}
+.accordion .fa-minus{
+  display: none;
+}
+.active, .accordion:hover{
+  background-color: #82c632;
+  color: white;
+  transition: all .5s ease-in;
+  border: 2px solid #82c632;
+}
+.active .fa-minus{
+  display: block;
+}
+.active .fa-plus{
+  display: none;
+}
+.accordion h5{
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  padding-left: 5px;
+}
+.active i, .active h5 , .accordion:hover i , .accordion:hover h5{
+  color: white;
+}
+.panal{
+  padding: 0 15px;
+  border-left: 1px solid #82c632;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  transition: all .2s ease-in;
+  max-height: 0;
+  color: white;
+}
 
 /*Big break*/
 /*Road not taken*/
@@ -813,6 +893,8 @@ footer svg {
 #sponsors{
   height: 100vh;
   background: url('section_sponsors.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 5%;
 }
 

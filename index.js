@@ -33,7 +33,7 @@ $(document).ready(function () {
       count = 0;
     }
   }, 30);
-  function mainCode(){
+  function mainCode() {
     if (screen.width < 1100) {
       $('.desktop-nav-bar').addClass('hidden');
       $('.mobile-nav-bar').removeClass('hidden');
@@ -58,7 +58,21 @@ $(document).ready(function () {
           rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
       }
+      var acordion = document.getElementsByClassName('accordion');
 
+      var i;
+      var len = acordion.length;
+      for (i = 0; i < len; i++) {
+        acordion[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          var panal = this.nextElementSibling;
+          if (panal.style.maxHeight) {
+            panal.style.maxHeight = null;
+          } else {
+            panal.style.maxHeight = panal.scrollHeight + 'px';
+          }
+        })
+      }
       function callbackFunc() {
         for (var i = 0; i < items.length; i++) {
           if (isElementInViewport(items[i])) {
@@ -76,12 +90,12 @@ $(document).ready(function () {
   };
   setTimeout(function () {
     $('body').addClass('loaded');
-    
+
     mainCode();
-  }, 3000);
+  }, 0);
 });
 function updateTimer() {
-  future = Date.parse("june 06, 2021 00:00:00");
+  future = Date.parse("june 08, 2021 00:00:00");
   now = new Date();
   diff = future - now;
 
