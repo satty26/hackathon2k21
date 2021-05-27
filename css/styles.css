@@ -41,7 +41,7 @@ html {
   background-color: #000;
   width: 100%;
   min-height: 100vh;
-  /* background: url("hero3.png"); */
+  /* background: url("hero3.webp"); */
 
 }
 
@@ -320,7 +320,7 @@ p.cursor::after {
 	padding-top: 200px;
 	width: 100%;
   min-height: 100vh;
-  background: url("sec2.png");
+  background: url("sec2.webp");
 }
 
 .neon-box{
@@ -419,7 +419,7 @@ p.cursor::after {
 	padding-top: 100px;
 	width: 100%;
   min-height: 100vh;
-  background: url("sec3.png");
+  background: url("sec3.webp");
   background-size: 100% 100%;
 }
 
@@ -482,10 +482,10 @@ p.cursor::after {
   color: #86c232;
 }
 .card1{
-	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('android1.png');
+	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('android1.webp');
 }
 .card2{
-	 background-image: linear-gradient(rgba(134, 194, 50,.1), rgba(134, 194, 50,0.6)), url('full.png');
+	 background-image: linear-gradient(rgba(134, 194, 50,.1), rgba(134, 194, 50,0.6)), url('full.webp');
 }
 .card3{
 	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('front.webp');
@@ -893,7 +893,7 @@ footer svg {
 }
 #sponsors{
   height: 100vh;
-  background: url('section_sponsors.png');
+  background: url('section_sponsors.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 5%;
