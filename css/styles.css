@@ -488,7 +488,7 @@ p.cursor::after {
 	 background-image: linear-gradient(rgba(134, 194, 50,.1), rgba(134, 194, 50,0.6)), url('full.png');
 }
 .card3{
-	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('front.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.6)), url('front.webp');
 }
 .front,
 .back {
