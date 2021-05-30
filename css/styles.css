@@ -340,7 +340,7 @@ p.cursor::after {
 }
 .about-hack{
 	position:absolute;
-	top: 20%;
+	top: 25%;
 	left: 10%;
 }
 .about-hack h2{
@@ -1080,6 +1080,9 @@ footer svg {
   }
 }
 @media screen and (max-width: 480px){
+  #title{
+    background-color: #141614;
+  }
 	@keyframes wave {
 	  to {transform: translateX(-100%);}
 	}
