@@ -95,7 +95,7 @@ $(document).ready(function () {
   }, 3000);
 });
 function updateTimer() {
-  future = Date.parse("june 08, 2021 00:00:00");
+  future = Date.parse("june 27, 2021 13:00:00");
   now = new Date();
   diff = future - now;
 
